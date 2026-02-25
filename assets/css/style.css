@@ -1,0 +1,348 @@
+/* Vora — Sovereign Personal AI */
+/* Dark theme, Bitcoin orange accents, clean typography */
+
+:root {
+  --bg: #0a0a0a;
+  --bg-elevated: #111111;
+  --text: #e0e0e0;
+  --text-muted: #888888;
+  --text-dim: #555555;
+  --orange: #F7931A;
+  --orange-dim: #c47515;
+  --white: #ffffff;
+  --max-width: 900px;
+  --max-width-wide: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- Navigation --- */
+
+nav {
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width-wide);
+  margin: 0 auto;
+}
+
+nav .site-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+nav .site-name:hover {
+  color: var(--orange);
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav .nav-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+}
+
+nav .nav-links a:hover {
+  color: var(--white);
+}
+
+/* --- Layout --- */
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.container-wide {
+  max-width: var(--max-width-wide);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* --- Home Page --- */
+
+.home-hero {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.home-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.home-hero .tagline {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+}
+
+.home-hero .cta {
+  display: inline-block;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  padding: 0.7rem 2rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  transition: all 0.2s;
+}
+
+.home-hero .cta:hover {
+  background: var(--orange);
+  color: var(--bg);
+}
+
+/* --- Blog Index --- */
+
+.blog-header {
+  padding: 4rem 0 2rem;
+}
+
+.blog-header h1 {
+  font-size: 2rem;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.post-list {
+  list-style: none;
+  padding: 2rem 0;
+}
+
+.post-list li {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.post-list li:last-child {
+  border-bottom: none;
+}
+
+.post-list a {
+  text-decoration: none;
+}
+
+.post-list .post-title {
+  font-size: 1.2rem;
+  color: var(--white);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.post-list .post-title:hover {
+  color: var(--orange);
+}
+
+.post-list .post-meta {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  letter-spacing: 0.03em;
+}
+
+.post-list .post-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 0.4rem;
+}
+
+/* --- Presentation Page --- */
+
+.presentation-header {
+  text-align: center;
+  padding: 5rem 2rem 3rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.presentation-header h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.presentation-header .subtitle {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.presentation-header .meta {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin-top: 1rem;
+}
+
+.presentation-intro {
+  max-width: var(--max-width);
+  margin: 0 auto 3rem;
+  padding: 0 2rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Slide sections */
+
+.slide-section {
+  margin-bottom: 1rem;
+}
+
+.slide-img {
+  width: 100%;
+  max-width: var(--max-width-wide);
+  display: block;
+  margin: 0 auto;
+}
+
+.slide-text {
+  max-width: var(--max-width);
+  margin: 2rem auto 4rem;
+  padding: 0 2rem;
+}
+
+.slide-text .speaker {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--orange);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.slide-text p {
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.slide-text p:last-child {
+  margin-bottom: 0;
+}
+
+.slide-text strong {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.slide-text em {
+  color: var(--orange);
+  font-style: normal;
+}
+
+/* Divider between major sections */
+
+.section-break {
+  width: 60px;
+  height: 2px;
+  background: var(--orange);
+  margin: 4rem auto;
+  opacity: 0.4;
+}
+
+/* --- Footer --- */
+
+footer {
+  border-top: 1px solid #1a1a1a;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+footer p {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+}
+
+footer a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--orange);
+}
+
+/* --- Responsive --- */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  nav {
+    padding: 1rem 1.5rem;
+  }
+
+  .home-hero h1 {
+    font-size: 2rem;
+  }
+
+  .presentation-header {
+    padding: 3rem 1.5rem 2rem;
+  }
+
+  .presentation-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .slide-text {
+    padding: 0 1.5rem;
+    margin: 1.5rem auto 3rem;
+  }
+
+  .container,
+  .container-wide {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .presentation-header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav .nav-links {
+    gap: 1rem;
+  }
+}
