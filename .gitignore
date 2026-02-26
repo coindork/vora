@@ -1,6 +1,9 @@
 # Marketing — drafts, threads, ideas. Private until posted.
 marketing/
 
+# Source materials — Plan B folder, large binaries, working files.
+vora planB/
+
 # Source materials — large binaries, local only
 # (covered by marketing/ above, kept for clarity)
 marketing/source-materials/
