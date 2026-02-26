@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}} | Vora</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://vora.io/blog/{{SLUG}}/">
+  <meta property="og:site_name" content="Vora">
+  <meta property="og:image" content="https://vora.io/assets/img/og-default.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{TITLE}}">
+  <meta name="twitter:description" content="{{DESCRIPTION}}">
+  <meta name="twitter:image" content="https://vora.io/assets/img/og-default.jpg">
+  <link rel="canonical" href="https://vora.io/blog/{{SLUG}}/">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{TITLE}}",
+    "description": "{{DESCRIPTION}}",
+    "author": {
+      "@type": "{{AUTHOR_TYPE}}",
+      "name": "{{AUTHOR}}"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Vora",
+      "url": "https://vora.io"
+    },
+    "datePublished": "{{DATE_ISO}}",
+    "mainEntityOfPage": "https://vora.io/blog/{{SLUG}}/"
+  }
+  </script>
+</head>
+<body>
+  <nav>
+    <a href="../../" class="site-name">Vora</a>
+    <div class="nav-links">
+      <a href="../">Blog</a>
+    </div>
+  </nav>
+
+  <article class="container" style="padding-top: 4rem; padding-bottom: 4rem;">
+
+    <h1 style="font-size: 2.4rem; font-weight: 800; color: #ffffff; line-height: 1.2; margin-bottom: 0.5rem;">{{TITLE}}</h1>
+    <p style="font-size: 0.85rem; color: #555555; letter-spacing: 0.03em; margin-bottom: 3rem;">{{DATE_DISPLAY}} &middot; {{AUTHOR}}</p>
+
+    <!-- CONTENT GOES HERE -->
+
+    <div class="section-break"></div>
+
+    <nav style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #1a1a1a;">
+      <p style="font-size: 0.85rem; color: var(--text-muted); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1rem;">Related reading</p>
+      <ul style="list-style: none; padding: 0;">
+        <li style="margin-bottom: 0.5rem;"><a href="../nyknym/" style="color: var(--orange); text-decoration: none;">Not Your Keys, Not Your Mind</a> — the full thesis</li>
+        <!-- ADD 2-3 MORE RELATED LINKS -->
+      </ul>
+    </nav>
+
+  </article>
+
+  <footer>
+    <p><a href="../../">Vora</a> &middot; Sovereign Personal AI</p>
+  </footer>
+</body>
+</html>
