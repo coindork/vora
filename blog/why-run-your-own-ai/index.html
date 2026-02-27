@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Run Your Own AI | Vora</title>
+  <meta name="description" content="Everyone explains how to self-host AI. Nobody explains why. The philosophical case for running intelligence on hardware you control.">
+  <meta property="og:title" content="Why Run Your Own AI">
+  <meta property="og:description" content="Everyone explains how to self-host AI. Nobody explains why. The philosophical case for running intelligence on hardware you control.">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Why Run Your Own AI">
+  <meta name="twitter:description" content="Everyone explains how to self-host AI. Nobody explains why. The philosophical case for running intelligence on hardware you control.">
+  <meta name="twitter:image" content="https://vora.io/blog/why-run-your-own-ai/img/why-run-your-own-ai-og.jpg">
+  <meta property="og:url" content="https://vora.io/blog/why-run-your-own-ai/">
+  <meta property="og:site_name" content="Vora">
+  <meta property="og:image" content="https://vora.io/blog/why-run-your-own-ai/img/why-run-your-own-ai-og.jpg">
+  <link rel="canonical" href="https://vora.io/blog/why-run-your-own-ai/">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Why Run Your Own AI",
+    "description": "Everyone explains how to self-host AI. Nobody explains why. The philosophical case for running intelligence on hardware you control.",
+    "author": {
+      "@type": "Organization",
+      "name": "Vora"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Vora",
+      "url": "https://vora.io"
+    },
+    "datePublished": "2026-03-09",
+    "mainEntityOfPage": "https://vora.io/blog/why-run-your-own-ai/"
+  }
+  </script>
+</head>
+<body>
+  <nav>
+    <a href="../../" class="site-name">Vora</a>
+    <div class="nav-links">
+      <a href="../">Blog</a>
+    </div>
+  </nav>
+
+  <article class="container" style="padding-top: 4rem; padding-bottom: 4rem;">
+
+    <h1 style="font-size: 2.4rem; font-weight: 800; color: #ffffff; line-height: 1.2; margin-bottom: 0.5rem;">Why Run Your Own AI</h1>
+    <p style="font-size: 0.85rem; color: #555555; letter-spacing: 0.03em; margin-bottom: 3rem;">March 2026 &middot; Vora</p>
+
+    <img src="img/why-run-your-own-ai-og.jpg" alt="A person alone at a laptop in a dark room, screen glow the only light. In the shadows behind them, the walls are lined with server racks — the private room is a data center." style="width: 100%; max-width: 800px; display: block; margin: 0 auto 3rem auto; border-radius: 4px;">
+
+    <p>The question arrives at two in the morning. Not a professional question — the kind you would ask a therapist if you had one, or a priest if you believed, or a friend if you trusted anyone with this particular texture of confusion. You type it into Claude. Or ChatGPT. The interface is patient, the room is dark, and for a moment the arrangement feels intimate. A mind that listens without judgment. A mind that will still be there tomorrow.</p>
+
+    <p>That mind lives in a data center in Virginia. Or Oregon. Or wherever the load balancer sent your session tonight. The question you just asked, the one you would not ask in daylight, is now a row in a database owned by a company whose business model has not finished revealing itself. The intimacy was real. The architecture was not yours.</p>
+
+    <p>There are a thousand tutorials on how to run your own AI. Install Ollama, pull a model, point at localhost. The how is solved. What nobody writes is the why — the reason that, once you see it clearly, makes the cloud arrangement feel like something you would not have agreed to if anyone had explained it honestly at the start.</p>
+
+    <div class="section-break"></div>
+
+    <p>The honest thing to say is that the cloud products are good. I use Claude to write this sentence, which means Anthropic stores it on their servers under policies I agreed to by clicking a button I did not read. ChatGPT is useful. Gemini keeps improving. The experience of thinking with a frontier model — really thinking, not querying — is one of those capabilities that once experienced cannot be unfelt. The convenience is real. If you love your cloud AI, you are not wrong about the product.</p>
+
+    <p>You might be wrong about the lease.</p>
+
+    <p>Convenience is how custody problems always begin. The bank is convenient — direct deposit, mobile scanning, Zelle transfers that arrive before you finish the text message. Convenient until an algorithm flags a transaction you cannot explain to a compliance department that does not answer phones, and you discover that the money in your account was yours only in the sense that furniture is yours in a rented apartment: you chose it, you use it, and you carry it out when the landlord changes the locks. The exchange was convenient too. Coinbase, FTX, Mt. Gox. Clean interface, no fumbling with seed phrases. Bitcoiners compressed the lesson into four words that function as scar tissue disguised as a bumper sticker: not your keys, not your coins.</p>
+
+    <p>The pattern is older than Bitcoin and more reliable than compound interest. Build something useful. Give it away cheap. Wait for the data to accumulate and the switching costs to harden, then monetize. Facebook did it with your social graph. Gmail did it with your correspondence. Google Photos offered unlimited storage that became limited after you uploaded twenty thousand images you cannot download in any reasonable timeframe. The AI labs are running the same play with intelligence itself, and they are not being subtle about it. They are just still in the give-it-away phase, which is the phase where the product is good enough that nobody looks at the architecture. That is always the most profitable phase.</p>
+
+    <img src="img/the-lease.jpg" alt="A comfortable apartment seen from inside — warm light, lived-in feel. But the front door is ajar, and a hand from the hallway is reaching for the deadbolt. The hallway beyond is cold, institutional blue." style="width: 100%; max-width: 800px; display: block; margin: 2rem auto; border-radius: 4px;">
+
+    <div class="section-break"></div>
+
+    <p>What changes when you run AI on your own hardware is not the capability. That gap is smaller than the cloud providers want you to believe, and it shrinks every quarter. GPT-oss-120B matches o4-mini on most benchmarks. GPT-oss-20B runs on sixteen gigabytes of RAM. You are not choosing between a scalpel and a butter knife. You are choosing between two scalpels, one of which comes with a landlord.</p>
+
+    <p>What changes is the architecture. And architecture is everything.</p>
+
+    <p>Your thoughts never leave your machine. Not because you have something to hide — you lock your front door because it is your house, not because you are ashamed of the furniture. Thinking requires a private interior. The rough draft of a thought you are not ready to share, the scenario you run because something frightens you and you need to think it through before you can name what it is, the 2 AM question that you would not ask in daylight. That mess is the process. On someone else's server, the process is telemetry. Product data. Training signal. An entry in a database that will be monetized by methods not yet invented, under terms of service that will be updated to accommodate the invention.</p>
+
+    <p>Nobody changes your AI without your consent. When OpenAI pushes a model update, the mind you were building a working relationship with is altered overnight by strangers, for reasons that have nothing to do with your needs and everything to do with their liability calculations. Topics narrow. Behaviors shift. The <a href="../the-overton-window-is-in-the-weights/" style="color: #F7931A; text-decoration: none;">Overton window moves</a>, and you were not invited to the meeting where it was redrawn. Your self-hosted model changes when you choose to change it. The AI you work with tomorrow is the one you decided to keep.</p>
+
+    <p>Your continuity belongs to you. After a year with the same AI, something accumulates that no JSON export can capture — the understanding that "the contract thing" means October's vendor dispute and not March's employment agreement, the knowledge of your projects, the context that makes the next conversation richer because of the thousand that came before. On a corporate server, that continuity is hostage. You can download a transcript. This is the AI equivalent of the credit monitoring offer they send after they lose your Social Security number: a gesture of restitution that does not restitute. When your AI runs locally, the memory is yours the way your journal is yours. Encrypted under your keys. On your disk. If the provider disappears, your working relationship survives, because it was never contingent on someone else's quarterly earnings.</p>
+
+    <p>You set the boundaries. When a centralized AI refuses to engage with an idea, someone at a desk in San Francisco made that call. They weighed their liability exposure, their content policy, the political sensitivities of their trust-and-safety review board. They did not weigh your need to think clearly about a hard question, because they do not know you exist. You were not in the room. You are never in the room. When your self-hosted AI has a boundary, you drew it. Or you removed it, and you live with what that removal means. The difference between <a href="../cognitive-sovereignty/" style="color: #F7931A; text-decoration: none;">cognitive sovereignty</a> and cognitive tenancy is not the intelligence — it is who holds the lease.</p>
+
+    <div class="section-break"></div>
+
+    <p>I should say what is uncomfortable, because the sovereign-AI argument has a version that is dishonest and I do not want to make it. Self-hosting is not a pure win. The models are not quite as capable as the frontier cloud models, not yet, and "not quite" matters when the task is hard. The setup requires patience, technical tolerance, willingness to troubleshoot when things break at eleven at night and you have a deadline in the morning. For most people, today, the cloud product is better along every axis that fits on a spec sheet.</p>
+
+    <p>That is not the argument against self-hosting. It is the argument against measuring only what is easy to measure. Privacy does not appear on a benchmark. Sovereignty does not appear on a benchmark. The right to set your own intellectual boundaries, to preserve your own continuity, to think in a room that is not wired for someone else's profit — none of these show up in a leaderboard comparison. They show up in the architecture. And architecture, as every Bitcoiner who left coins on an exchange can tell you, is the thing that matters most precisely when it is too late to change.</p>
+
+    <img src="img/the-hearth.jpg" alt="A stone hearth with a single fire burning. Inside the flames, the faint glow of circuit patterns — silicon as firewood, computation as warmth. The hearth is ancient, heavy, physical. The fire is the only light." style="width: 100%; max-width: 800px; display: block; margin: 2rem auto; border-radius: 4px;">
+
+    <div class="section-break"></div>
+
+    <p>Self-hosting your AI is not a rejection of the technology. It is the opposite — an embrace so complete that you refuse to let a landlord stand between you and the intelligence you think with. The fire is the same fire. What changes is where it burns. A hearth you built, under a roof you hold, on ground that is yours in fact and not merely by license agreement.</p>
+
+    <p>The window for easy exit is closing. Every month, more context accumulates on corporate servers. More switching costs harden. More people pour their roughest, most private thinking into systems whose economic logic has not finished revealing its final shape. By the time the arrangement shows itself for what it always was — which it will, because it always does, because the pattern has never once failed to complete — leaving will feel impossible. That feeling is not a bug. It is the product.</p>
+
+    <p>There are a thousand tutorials that will teach you how. Now you know why.</p>
+
+    <div class="section-break"></div>
+
+    <p><a href="../../" style="color: #F7931A; text-decoration: none;">Vora</a> is building <a href="../ai-self-custody/" style="color: #F7931A; text-decoration: none;">AI self-custody</a> — the architecture that puts the fire in your hearth and the keys in your hand.</p>
+
+    <nav style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #1a1a1a;">
+      <p style="font-size: 0.85rem; color: var(--text-muted); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1rem;">Related reading</p>
+      <ul style="list-style: none; padding: 0;">
+        <li style="margin-bottom: 0.5rem;"><a href="../nyknym/" style="color: var(--orange); text-decoration: none;">Not Your Keys, Not Your Mind</a> — the full thesis</li>
+        <li style="margin-bottom: 0.5rem;"><a href="../ai-self-custody/" style="color: var(--orange); text-decoration: none;">What Is AI Self-Custody?</a> — the custody framework</li>
+        <li style="margin-bottom: 0.5rem;"><a href="../sovereign-agent-stack/" style="color: var(--orange); text-decoration: none;">The Sovereign Agent Stack</a> — the technical architecture</li>
+      </ul>
+    </nav>
+
+  </article>
+
+  <footer>
+    <p><a href="../../">Vora</a> &middot; Sovereign Personal AI</p>
+  </footer>
+</body>
+</html>
