@@ -327,6 +327,29 @@ nav .nav-links a:hover {
   opacity: 0.4;
 }
 
+/* --- Article/Blog Post Typography --- */
+
+article p {
+  margin-bottom: 1.4rem;
+}
+
+article p:last-child {
+  margin-bottom: 0;
+}
+
+article a {
+  color: var(--orange);
+  text-decoration: none;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+article .section-break {
+  margin: 2.5rem auto;
+}
+
 /* --- Footer --- */
 
 footer {
