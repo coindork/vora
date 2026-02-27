@@ -46,11 +46,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://vora.io/blog/cognitive-custody/</loc>
-    <lastmod>2026-03-16</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://vora.io/blog/sovereign-agents-sovereign-money/</loc>
     <lastmod>2026-03-20</lastmod>
     <priority>0.8</priority>
@@ -78,11 +73,6 @@
   <url>
     <loc>https://vora.io/blog/cognitive-castes/</loc>
     <lastmod>2026-04-14</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vora.io/blog/fiduciary-gap/</loc>
-    <lastmod>2026-04-21</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
