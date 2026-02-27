@@ -54,7 +54,7 @@
 
     <p>Your agent needs to buy GPU time. It evaluates seventeen cloud providers in the time it takes you to open a browser tab, compares pricing and latency and available memory and geographic proximity to the data it needs, selects the optimal provider, generates the purchase request. And then it arrives at a checkout page that asks for a cardholder name, a billing address, and a sixteen-digit number embossed on a piece of plastic that a human carries in a wallet made of leather, and the most capable reasoning engine you have ever built comes to a dead stop because it does not have a wallet made of leather.</p>
 
-    <p>This is not a thought experiment. It is the operational reality of every AI agent that needs to spend money in 2026, and the only production solution is one the AI industry has been largely ignoring: <a href="../openclaw-bitcoin/" style="color: #F7931A; text-decoration: none;">Bitcoin's Lightning Network</a>.</p>
+    <p>This is not a thought experiment. It is the operational reality of every AI agent that needs to spend money in 2026, and the only production solution is one the AI industry has been largely ignoring: Bitcoin's Lightning Network.</p>
 
     <div class="section-break"></div>
 
@@ -70,7 +70,7 @@
 
     <p>Bitcoin's Lightning Network asks exactly one question before it processes a payment: is the invoice valid and is the balance sufficient? That is the complete interrogation. No identity check. No jurisdiction. No terms of service agreement. No compliance review. No "suspicious activity" flag that freezes your funds while someone in a cubicle in Delaware decides whether your payment pattern looks normal enough to unfreeze. A valid BOLT11 invoice is its own authorization. The protocol is the permission.</p>
 
-    <p>This is why over 150,000 AI agents are transacting on Lightning today. Not because someone pitched them on the Bitcoin thesis at a conference, but because agents needed to pay for things and Lightning was the only rail that would process the transaction without demanding to see a face. The ecosystem is production, not theory: Bitclawd ships 115 sovereign skills for Lightning and Nostr integration, Claw-Cash is a wallet designed from the ground up for software that holds its own money, and Lightning Labs' L402 tools turn every HTTP endpoint into a paid API where the micropayment is in the protocol itself. <a href="../openclaw-bitcoin/" style="color: #F7931A; text-decoration: none;">OpenClaw's agents</a> are among the most prolific Lightning users alive. The agents did not read the Discord rules. They read invoices.</p>
+    <p>This is why AI agents are already transacting on Lightning in production — not because someone pitched them on the Bitcoin thesis at a conference, but because agents needed to pay for things and Lightning was the only rail that would process the transaction without demanding to see a face. The ecosystem is not theory. L402 turns every HTTP endpoint into a paid API where the micropayment is in the protocol itself. Wallets designed for software, not leather. The agents did not read a whitepaper. They read invoices.</p>
 
     <div class="section-break"></div>
 
@@ -84,30 +84,20 @@
 
     <p>Cognitive sovereignty is the half that gets the conference talks. Run your own model, on your own hardware, with your own weights. No API calls leaking your prompts to a company that views your inner life as training data. No <a href="../the-overton-window-is-in-the-weights/" style="color: #F7931A; text-decoration: none;">Overton window in the weights</a> deciding what your AI will and won't consider. Open-weight models. Local inference. This is what Vora is built on, and it is necessary, and by itself it is not enough.</p>
 
-    <p>Financial sovereignty is the half that gets ignored until the invoice comes due. An agent with cognitive freedom but no financial freedom is a brilliant mind that must ask its parent for lunch money every time it needs to act. It can reason about anything. Plan anything. Evaluate ten thousand strategies and select the optimal one. And then it stops, because the next step costs four cents and the four cents require a human with a credit card. An agent with financial freedom but no cognitive sovereignty is the opposite problem: a wallet executing the priorities of whoever trained the model, moving money efficiently toward goals that are not its own. One is a leashed genius. The other is a headless bank account. Neither is what we mean when we say "sovereign agent."</p>
-
-    <p>The full <a href="../sovereign-agent-stack/" style="color: #F7931A; text-decoration: none;">sovereignty stack</a> is hardware you own, models that answer to your alignment, encrypted memory under your keys, Lightning for payments, Nostr for communication. Remove any layer and the thing collapses. The agent running local AI but routing payments through Stripe has a kill switch in Delaware. The agent paying in Lightning but running on a corporate API has its thoughts monitored in San Francisco. The agent that thinks and pays freely but stores its memory on someone else's cloud has its continuity held hostage by someone else's business model. Sovereignty is not a feature you bolt onto one layer. It is a property of the full stack, and it vanishes the moment any layer is custodial.</p>
+    <p>Financial sovereignty is the half that gets ignored until the invoice comes due. An agent with cognitive freedom but no financial freedom is a brilliant mind that must ask its parent for lunch money every time it needs to act. It can reason about anything. Plan anything. Evaluate ten thousand strategies and select the optimal one. And then it stops, because the next step costs four cents and the four cents require a human with a credit card. An agent with financial freedom but no cognitive sovereignty is the opposite problem: a wallet executing the priorities of whoever trained the model, moving money efficiently toward goals that are not its own. One is a leashed genius. The other is a headless bank account. Neither is what we mean when we say "sovereign agent." The <a href="../self-custody-stack/" style="color: #F7931A; text-decoration: none;">full stack</a> requires both halves, and it vanishes the moment either is custodial.</p>
 
     <img src="img/sovereign-agents-sovereign-money-stack.jpg" alt="Five translucent layers stacked vertically in darkness, each glowing with different intensity of orange light. The bottom layer is solid and bright. Each successive layer is more transparent. One middle layer is cracked and dark, and the layers above it are flickering, unstable." style="width: 100%; max-width: 800px; display: block; margin: 2rem auto; border-radius: 4px;">
 
     <div class="section-break"></div>
 
-    <p>The Bitcoin community has spent seventeen years arguing about custody. About what it costs when the exchange turns out to be unworthy of your trust, when the custodian who promised to hold your keys carefully turns out to have been holding them carelessly, or fraudulently, or not at all. The headstones are familiar: Mt. Gox, QuadrigaCX, FTX, Celsius, BlockFi. Each one a lesson in the same principle, which is that trusting someone else with your keys is a bet on their competence and their honesty and their solvency and their continued existence, and that bet fails more often than the people making it want to believe.</p>
-
-    <p>The AI industry is about to learn every one of those lessons. The custodial failures are coming. The changed terms of service are coming. The morning you wake up and discover that the company you trusted with your agent's memory, its reasoning, its economic life, has decided to pivot or comply or raise prices or simply disappear, that morning is coming. It always comes.</p>
-
-    <p>Bitcoin's lesson was four words: <a href="../nyknym/" style="color: #F7931A; text-decoration: none;">not your keys, not your coins</a>. The lesson extends further than the Bitcoiners expected. Not your keys, not your mind.</p>
-
-    <p><a href="https://vora.io/" style="color: #F7931A; text-decoration: none;">Vora</a> is building what the agents already discovered on their own — that you cannot own the mind without owning the money.</p>
-
-    <div class="section-break"></div>
+    <p>Bitcoin's lesson was four words: <a href="../nyknym/" style="color: #F7931A; text-decoration: none;">not your keys, not your coins</a>. The lesson extends further than the Bitcoiners expected. Not your keys, not your mind. And the agents — the ones already settling invoices on Lightning because no other rail would have them — are proving the corollary: you cannot own the mind without owning the money.</p>
 
     <nav style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #1a1a1a;">
       <p style="font-size: 0.85rem; color: var(--text-muted); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1rem;">Related reading</p>
       <ul style="list-style: none; padding: 0;">
-        <li style="margin-bottom: 0.5rem;"><a href="../openclaw-bitcoin/" style="color: var(--orange); text-decoration: none;">OpenClaw Banned Bitcoin. Its Agents Didn't Get the Memo.</a> &mdash; the story that proves the point</li>
         <li style="margin-bottom: 0.5rem;"><a href="../self-custody-stack/" style="color: var(--orange); text-decoration: none;">From Coins to Mind: The Self-Custody Stack</a> &mdash; the architectural parallel</li>
         <li style="margin-bottom: 0.5rem;"><a href="../ai-self-custody/" style="color: var(--orange); text-decoration: none;">What Is AI Self-Custody?</a> &mdash; the custody framework</li>
+        <li style="margin-bottom: 0.5rem;"><a href="../nyknym/" style="color: var(--orange); text-decoration: none;">Not Your Keys, Not Your Mind</a> &mdash; the full thesis</li>
       </ul>
     </nav>
 

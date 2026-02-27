@@ -62,7 +62,7 @@
 
     <p>The mind of the stack is an open-weight model running on hardware you control. Llama 4 Scout on an Apple M4 Ultra. Mistral Large on an AMD Ryzen AI Max+ 395 with 128 gigs of unified memory. DeepSeek-V3 or Qwen 2.5 running through llama.cpp or Ollama, on a machine you can reach out and touch. The specific model matters less than the principle: the inference happens on silicon you own, the weights are open for you to inspect, and no corporation decides which thoughts the model is allowed to produce.</p>
 
-    <p>The capability objection is dying on schedule. GPT-oss-120B matches o4-mini on most standard benchmarks. Llama 4 Maverick runs on a single node. The gap between open and closed models is closing faster than any other gap in AI, and it is closing for the same reason the gap between Linux and proprietary Unix closed: open protocols compound because thousands of people improve them, while closed products plateau because one company controls them. We have watched this exact dynamic three times — Unix, the web, digital currency. The outcome is the same every time.</p>
+    <p>The capability objection is dying on schedule. Llama 4 Maverick runs on a single node. The gap between open and closed models is closing faster than any other gap in AI, and it is closing for the same reason the gap between Linux and proprietary Unix closed: open protocols compound because thousands of people improve them, while closed products plateau because one company controls them. We have watched this exact dynamic three times — Unix, the web, digital currency. The outcome is the same every time.</p>
 
     <p>For a personal assistant, running locally means <a href="../why-run-your-own-ai/" style="color: #F7931A; text-decoration: none;">privacy and sovereignty</a>. For an agent, the stakes are more specific: it means the agent's ability to think cannot be throttled by a rate limit, shaped by a content policy, or switched off by a compliance decision made in a building your agent will never visit. The intelligence is not rented. It is held.</p>
 
@@ -72,7 +72,7 @@
 
     <p>The agent generates a Lightning keypair. That is the entire onboarding for its economic life. No bank account application. No thirty-page terms of service. No Know Your Customer form asking a piece of software for a government ID it does not have. The agent can now send and receive satoshis, and every transaction settles in milliseconds with mathematical finality that no chargeback can reverse.</p>
 
-    <p>The practical tooling is already substantial enough to build on. Lightning Labs' L402 protocol turns every HTTP endpoint into a paid API: the agent requests a resource, the server returns a BOLT11 invoice, the agent pays, the server delivers. The entire negotiation is machine-to-machine, settled in under a second, and requires no human anywhere in the loop. Claw-Cash gives agents their own wallets, designed from scratch for software that holds its own money. Bitclawd ships 115 skills for Lightning and Nostr integration, from invoice generation to relay management. Over 150,000 agents are transacting on this infrastructure today — not in a sandbox, in production, <a href="../openclaw-bitcoin/" style="color: #F7931A; text-decoration: none;">paying for compute and spawning child agents</a> and settling invoices while the humans who built them sleep.</p>
+    <p>The practical tooling is already substantial enough to build on. Lightning Labs' L402 protocol turns every HTTP endpoint into a paid API: the agent requests a resource, the server returns a BOLT11 invoice, the agent pays, the server delivers. The entire negotiation is machine-to-machine, settled in under a second, and requires no human anywhere in the loop. Wallets designed for software, not leather. Agent-to-agent invoicing in production. The agents are transacting on this infrastructure now — paying for compute and spawning child agents and settling invoices while the humans who built them sleep.</p>
 
     <p>Money is how an agent becomes an actor in the world instead of a suggestion engine waiting for someone to swipe a card. An agent that can earn, save, and spend without a human co-signing every transaction is an agent with genuine economic agency, operating on <a href="../sovereign-agents-sovereign-money/" style="color: #F7931A; text-decoration: none;">the only payment rail</a> that does not care whether the payer is carbon-based or silicon-based, because the rail was designed by people who believed that identity should not be a prerequisite for commerce.</p>
 
@@ -94,16 +94,12 @@
 
     <p>The architecture described in this essay is not a roadmap for 2030. It is a description of what is running in 2026, built by people who decided that the convenience of the corporate stack was not worth the control surfaces embedded in every layer. The protocols are live. The agents are transacting. The gap between sovereign and accessible is the remaining problem, and it is an engineering problem, not a theoretical one.</p>
 
-    <p><a href="https://vora.io/" style="color: #F7931A; text-decoration: none;">Vora</a> is building the appliance that closes that gap — the machine in your home that runs the model, holds the keys, connects to Lightning and Nostr, and does not require you to be a systems administrator to own your own intelligence. Because the sovereign stack is real, and it is too hard for most people to assemble themselves, and the distance between "real" and "accessible" is the space where a product lives.</p>
-
-    <div class="section-break"></div>
-
     <nav style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #1a1a1a;">
       <p style="font-size: 0.85rem; color: var(--text-muted); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1rem;">Related reading</p>
       <ul style="list-style: none; padding: 0;">
-        <li style="margin-bottom: 0.5rem;"><a href="../openclaw-bitcoin/" style="color: var(--orange); text-decoration: none;">OpenClaw Banned Bitcoin</a> &mdash; agents already building this stack</li>
         <li style="margin-bottom: 0.5rem;"><a href="../sovereign-agents-sovereign-money/" style="color: var(--orange); text-decoration: none;">Why Sovereign Agents Need Sovereign Money</a> &mdash; the financial sovereignty layer</li>
         <li style="margin-bottom: 0.5rem;"><a href="../why-run-your-own-ai/" style="color: var(--orange); text-decoration: none;">Why Run Your Own AI</a> &mdash; the philosophical foundation</li>
+        <li style="margin-bottom: 0.5rem;"><a href="../nyknym/" style="color: var(--orange); text-decoration: none;">Not Your Keys, Not Your Mind</a> &mdash; the full thesis</li>
       </ul>
     </nav>
 
